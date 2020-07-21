@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tarun Lubricants</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="{% static 'css/animate.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<div class="container-fluid pl-0 pr-0 bg-img clearfix parallax-window2" data-parallax="scroll"
+     data-image-src="{% static 'images/banner2.jpg' %}">
+    <!----------------------------------------------------------------------------------->
+    {% include "navbar.html" %}     <!--Navbar-->
+    <!----------------------------------------------------------------------------------->
+    <div class="container">
+        <div class="dv36-banner-text-box">
+            <div class="quote-box pl-5 pr-5 wow bounceInRight">
+                <h2> LUBRICANTS <br><span>FOR ALL YOUR NEEDS</span></h2>
+            </div>
+            <br>
+        </div>
+    </div>
+</div>
+<div class="container-fluid dv36-network">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h4 class="wow bounceInUp">Tarun Lubricants</h4>
+                <h2 class="wow bounceInRight">OUR INFRASTRUCTURE</h2>
+                <hr/>
+                <p class="wow bounceInDown">Spread over an area of about 25000 sq. feet that helps us in achieving our
+                    organizational goals.
+                    For proper quality control and delivering customer satisfaction, our infrastructural unit is divided
+                    into processing unit, quality testing unit, research & development laboratory, packaging unit and
+                    raw material storage unit. Our facility has been equipped with modern machinery and equipment that
+                    helps produce high quality
+                    products with repeatability, accuracy and reliability in operations.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="{% static 'images/tarunlube1.jpg' %}" alt="gym" class="img-fluid"/>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="about-us" class="container-fluid dv36-about-us pl-0 pr-0 parallax-window" data-parallax="scroll"
+     data-image-src="{% static 'images/about-us-bg.jpg' %}">
+    <div class="container">
+    	<div class="row">
+        	<div class="col-md-6">
+                	<img src="{% static 'images/tarunlube2.jpg' %}" alt="gym" class="img-fluid"/>
+        	</div>
+        	<div class="col-sm-6">
+            	<h2 class="wow bounceInLeft" data-wow-delay=".10s">ABOUT US</h2>
+            	<hr/>
+            	<p class="wow bounceInRight" data-wow-delay=".10s">Tarun Lubricants private limited (TLPL) is a private
+                	limited company registered under the Companies Act, 1956. The registered office of the company is
+                	situated at Mahabir Rice Complex, Midnapur, and city office at 230A, A.J.C Bose Road, Room no.- 509,
+                	Kolkata, West Bengal, India. We are in the business of manufacture and marketing of sulfonates,
+                	industrial lubricants and automotive lubricants.
+
+                	With a view to tap the vast potential for sulfonates and lubricants have successfully cater the same on
+                	a sustainable basis as well as cut down on the logistics cost and respond time for meeting the customer
+                	requirements in all regions.
+            	</p>
+<!--             	<div class="dv36-banner-text-box-new-button">
+                	<a href="#" class="btn text-uppercase btn-outline-danger btn-lg mr-3 mb-3 wow bounceInUp">Learn More</a>
+            	</div> -->
+       		 </div>
+    	</div>
+    </div>
+</div>
+<div class="container-fluid dv36-content-box">
+    <div class="container">
+        <br>
+        <div class="row gallery">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body mb-4 wow bounceInLeft" data-wow-delay=".10s">
+                        <h4 class="card-title">INDUSTIRAL LUBRICANTS</h4>
+                        <p class="card-text">I just wanted to sincerely thank you for the opportunity to represent
+                            Precision Nutrition and the US at such an amazing event. </p>
+                        <div>
+                            <a href="{% url 'products:catalogue' %}#indus-cat"
+                               class="btn text-uppercase btn-danger btn-lg mr-3 mb-3 wow bounceInUp">View&nbsp;&nbsp;&#8921;</a>
+                        </div>
+                    </div>
+                    <img class="card-img-top img-fluid wow bounceInRight" data-wow-delay=".10s"
+                         src="{% static 'images/g1.jpg' %}" alt="Card image"></div>
+            </div>
+            <div class="col-md-3">
+                <div class="card"><img class="card-img-top img-fluid wow bounceInUp" data-wow-delay=".10s"
+                                       src="{% static 'images/g2.jpg' %}" alt="Card image">
+                    <div class="card-body mt-4 wow bounceInDown" data-wow-delay=".10s">
+                        <h4 class="card-title">SULFONATES</h4>
+                        <p class="card-text">I just wanted to sincerely thank you for the opportunity to represent
+                            Precision Nutrition and the US at such an amazing event. </p>
+                        <div>
+                            <a href="{% url 'products:catalogue' %}#sulfo-cat"
+                               class="btn text-uppercase btn-danger btn-lg mr-3 mb-3 wow bounceInUp">View&nbsp;&nbsp;&#8921;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body mb-4 wow bounceInRight" data-wow-delay=".10s">
+                        <h4 class="card-title">TEXTILE</h4>
+                        <p class="card-text">I just wanted to sincerely thank you for the opportunity to represent
+                            Precision Nutrition and the US at such an amazing event. </p>
+                        <div>
+                            <a href="{% url 'products:catalogue' %}#tex-cat"
+                               class="btn text-uppercase btn-danger btn-lg mr-3 mb-3 wow bounceInUp">View&nbsp;&nbsp;&#8921;</a>
+                        </div>
+                    </div>
+                    <img class="card-img-top img-fluid wow bounceInLeft" data-wow-delay=".10s"
+                         src="{% static 'images/g3.jpg' %}" alt="Card image"></div>
+            </div>
+            <div class="col-md-3">
+                <div class="card"><img class="card-img-top img-fluid wow bounceInUp" data-wow-delay=".10s"
+                                       src="{% static 'images/g4.jpg' %}" alt="Card image">
+                    <div class="card-body mt-4 wow bounceInDown" data-wow-delay=".10s">
+                        <h4 class="card-title">AUTOMOTIVE LUBRICANTS</h4>
+                        <p class="card-text">I just wanted to sincerely thank you for the opportunity to represent
+                            Precision Nutrition and the US at such an amazing event. </p>
+                        <div>
+                            <a href="{% url 'products:catalogue' %}#auto-cat"
+                               class="btn text-uppercase btn-danger btn-lg mr-3 mb-3 wow bounceInUp">View&nbsp;&nbsp;&#8921;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row trainers pl-0 pr-0">
+            <div class="col-12 bg-50">
+                <div class="quote-box2 wow bounceInDown" data-wow-delay=".10s">
+                    <h2 class="theme-text"> PRODUCTS </h2>
+                </div>
+            </div>
+            <div class="col-md-6 pr-5 pl-5">
+                <div class="card text-center wow bounceInLeft" data-wow-delay=".10s"><img
+                        class="card-img-top rounded-circle img-fluid" src="{% static 'images/trainers1.jpg' %}"
+                        alt="Card image">
+                    <div class="card-body mb-5">
+                        <h4 class="card-title">MOTOR OIL</h4>
+                        <p class="card-text">Trainers, athletes and serious clients alike are looking for the toughest,
+                            most brutally productive training techniques to spice up their workouts and provide a truly
+                            unique challenge</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 pl-5 pr-5">
+                <div class="card text-center wow bounceInRight" data-wow-delay=".10s"><img
+                        class="card-img-top rounded-circle img-fluid" src="{% static 'images/trainers2.jpg' %}"
+                        alt="Card image">
+                    <div class="card-body mb-5">
+                        <h4 class="card-title">LUBREX</h4>
+                        <p class="card-text">Trainers, athletes and serious clients alike are looking for the toughest,
+                            most brutally productive training techniques to spice up their workouts and provide a truly
+                            unique challenge</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center col-12 bg-50">
+                <div class="dv36-banner-text-box-new-button">
+                    <a href="{% url 'products:catalogue' %}"
+                       class="btn text-uppercase btn-outline-danger btn-lg mr-3 mb-3 wow bounceInUp">More
+                        Products</a>
+                </div>
+            </div>
+        </div>
+    	<div class="quote-box2 wow bounceInDown" data-wow-delay=".10s">
+        	<h2 class="theme-text text-center">Visitors : {{ visitors.visit }}</h2>
+        </div>
+    </div>
+</div>
+<footer class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 footer1 d-flex wow bounceInLeft" data-wow-delay=".10s">
+                <div class="d-flex flex-wrap align-content-center">
+                    <h4>Factory &amp; Registered Office :</h4>
+                	<p>Mahabir Rice Mill Complex, P.O. - Vidyasagar University, Midnapur</p>
+            		<h4>City Office :</h4>
+                	<p> 230A, A.J.C Bose Road, Room no.- 509, Kolkata – 700020</p>
+                </div>
+            </div>
+            <div class="col-md-6 footer2 wow bounceInUp" data-wow-delay=".10s" id="contact">
+                <form method="POST">
+                    {% csrf_token %}
+                    <div class="form-box">
+                        <h4>CONTACT US</h4>
+                        <table class="table table-responsive d-table">
+                            <tr>
+                                <td><input type="text" class="form-control pl-0" placeholder="NAME" id="nameField" name="name"/></td>
+                                <td><input type="text" class="form-control pl-0" placeholder="PHONE" id="phoneField" name="phone"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="form-control pl-0" placeholder="ADDRESS" id="addressField" name="address"/></td>
+                            	<td><input type="email" class="form-control pl-0" placeholder="EMAIL" id="emailField" name="email"/>
+                            </tr>
+                            <tr>
+                                <td colspan="2"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><input type="text" class="form-control pl-0" placeholder="MESSAGES"
+                                                      id="messageField" name="message"/></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="text-center pl-0">
+                                    <button type="submit" class="btn btn-dark">SEND</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-3 footer3 wow bounceInRight" data-wow-delay=".10s">
+                <h5>PHONE :</h5>
+                <p>9434023282 / 8337093033</p>
+                <h5>Email :</h5>
+                <p>Tarunlube@gmail.com</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Bootstrap JS, ... -->
+
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/parallax.js' %}"></script>
+<script src="{% static 'js/wow.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>

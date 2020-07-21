@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tarun Lubricants</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="{% static 'css/animate.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<div class="container-fluid pl-0 pr-0 bg-img clearfix parallax-window2" data-parallax="scroll"
+     data-image-src="{% static 'images/banner2.jpg' %}">
+    <!----------------------------------------------------------------------------------->
+    {% include "navbar.html" %}     <!--Navbar-->
+    <!----------------------------------------------------------------------------------->
+    <div class="container">
+        <div class="dv36-banner-text-box">
+            <div class="quote-box pl-5 pr-5 wow bounceInRight">
+                <h2> PRODUCTS <br><span>CATALOGUE</span></h2>
+            </div>
+            <br>
+            <br>
+            <a href="#supfo-cat" class="btn text-uppercase btn-outline-danger btn-lg mr-3 mb-3 wow bounceInUp">
+                SULFONATES </a>
+            <a href="#indus-cat" class="btn text-uppercase btn-outline-danger btn-lg mb-3 wow bounceInDown">
+                INDUSTRIAL </a>
+            <br>
+            <a href="#auto-cat" class="btn text-uppercase btn-outline-danger btn-lg mr-3 mb-3 wow bounceInUp">
+                AUTOMOTIVE </a>
+            <a href="#tex-cat" class="btn text-uppercase btn-outline-danger btn-lg mb-3 wow bounceInDown"> TEXTLE </a>
+        </div>
+    </div>
+</div>
+<div class="container-fluid dv36-content-box">
+    <div id="sulfo-cat" class="row trainers pl-0 pr-0">
+        <div class="col-12 bg-50">
+            <div class="quote-box2 wow bounceInDown" data-wow-delay=".10s">
+                <h2 class="theme-text"> SULFONATES </h2>
+            </div>
+        </div>
+        {% for sulfonate in sulfonates|slice:":3" %}
+        <div class="col-md-4 pr-5 pl-5">
+            <div class="card text-center wow bounceInLeft" data-wow-delay=".10s"><img
+                    class="card-img-top rounded-circle img-fluid" src="{{sulfonate.image_1.url}}"
+                    alt="Card image">
+                <div class="card-body mb-5">
+                    <h4 class="card-title">{{sulfonate.title}}</h4>
+                    <p class="card-text">{{sulfonate.description_short}}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        <div class="text-center col-12 bg-50">
+            <div class="dv36-banner-text-box-new-button">
+                <a href="{% url 'products:sulfo_view' %}" class="btn text-uppercase btn-outline-danger btn-lg mr-3 mb-3 wow bounceInUp">More
+                    Products</a>
+            </div>
+        </div>
+    </div>
+    <div id="indus-cat" class="row trainers pl-0 pr-0">
+        <div class="col-12 bg-50">
+            <div class="quote-box2 wow bounceInDown" data-wow-delay=".10s">
+                <h2 class="theme-text"> INDUSTRIAL LUBRICANTS </h2>
+            </div>
+        </div>
+        {% for indlub in indlubs|slice:":3" %}
+        <div class="col-md-4 pr-5 pl-5">
+            <div class="card text-center wow bounceInLeft" data-wow-delay=".10s"><img
+                    class="card-img-top rounded-circle img-fluid" src="{{ indlub.image_1.url }}"
+                    alt="Card image">
+                <div class="card-body mb-5">
+                    <h4 class="card-title">{{ indlub.title }}</h4>
+                    <p class="card-text">{{ indlub.description_short }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        <div class="text-center col-12 bg-50">
+            <div class="dv36-banner-text-box-new-button">
+                <a href="{% url 'products:indus_view' %}" class="btn text-uppercase btn-outline-danger btn-lg mr-3 mb-3 wow bounceInUp">More
+                    Products</a>
+            </div>
+        </div>
+    </div>
+    <div id="auto-cat" class="row trainers pl-0 pr-0">
+        <div class="col-12 bg-50">
+            <div class="quote-box2 wow bounceInDown" data-wow-delay=".10s">
+                <h2 class="theme-text"> AUTOMOTIVE LUBRICANTS </h2>
+            </div>
+        </div>
+        {% for autolub in autolubs|slice:":3" %}
+        <div class="col-md-4 pr-5 pl-5">
+            <div class="card text-center wow bounceInLeft" data-wow-delay=".10s"><img
+                    class="card-img-top rounded-circle img-fluid" src="{{ autolub.image_1.url }}"
+                    alt="Card image">
+                <div class="card-body mb-5">
+                    <h4 class="card-title">{{ autolub.title }}</h4>
+                    <p class="card-text">{{ autolub.description_short }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        <div class="text-center col-12 bg-50">
+            <div class="dv36-banner-text-box-new-button">
+                <a href="{% url 'products:auto_view' %}" class="btn text-uppercase btn-outline-danger btn-lg mr-3 mb-3 wow bounceInUp">More
+                    Products</a>
+            </div>
+        </div>
+    </div>
+    <div id="tex-cat" class="row trainers pl-0 pr-0">
+        <div class="col-12 bg-50">
+            <div class="quote-box2 wow bounceInDown" data-wow-delay=".10s">
+                <h2 class="theme-text"> TEXTILE </h2>
+            </div>
+        </div>
+        {% for texlub in texlubs|slice:":3" %}
+        <div class="col-md-4 pr-5 pl-5">
+            <div class="card text-center wow bounceInLeft" data-wow-delay=".10s"><img
+                    class="card-img-top rounded-circle img-fluid" src="{{ texlub.image_1.url }}"
+                    alt="Card image">
+                <div class="card-body mb-5">
+                    <h4 class="card-title">{{ texlub.title }}</h4>
+                    <p class="card-text">{{ texlub.description_short }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        <div class="text-center col-12 bg-50">
+            <div class="dv36-banner-text-box-new-button">
+                <a href="{% url 'products:tex_view' %}" class="btn text-uppercase btn-outline-danger btn-lg mr-3 mb-3 wow bounceInUp">More
+                    Products</a>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="container-fluid">
+    <div class="container align-content-center">
+        <br>
+        <p>&copy; 2020. All rights reserved. Design by
+            <a href="#">Synamatic 2020</a>.
+        </p>
+    </div>
+</footer>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Bootstrap JS, ... -->
+
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/parallax.js' %}"></script>
+<script src="{% static 'js/wow.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+[
+  {
+    "model": "enquiry.Visitor",
+    "pk": 1,
+    "fields": {
+      "name": "visit",
+      "visit": "0"
+    }
+  }
+]
